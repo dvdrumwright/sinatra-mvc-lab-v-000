@@ -8,7 +8,7 @@ class PigLatinizer
 
 
    def piglatinize_word(word)
-       !words.scan(/[aeoui]/).count
+      
        first_letter = word[0].downcase
        if ["a", "e", "i", "o", "u"].include?(first_letter)
            "#{word}way"
@@ -25,4 +25,4 @@ class PigLatinizer
        end
 
      end
-    end 
+    end
