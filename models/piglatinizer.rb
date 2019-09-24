@@ -1,8 +1,11 @@
 class Piglatinizer
-  attr_reader :string
 
-  def initialize(string)
-    @string = string
+
+  def PigLatinizer(string)
+    string_reverse = string.split("")
+    reversed = []
+    string.size.times { reversed << string_reverse.pop }
+    reversed.join
   end
 
   def consonant(vowel)
@@ -10,12 +13,8 @@ class Piglatinizer
     string << vowel
   end
 
- def reverse_string(string)
-   string_reverse = string.split("")
-   reversed = []
-   string.size.times { reversed << string_reverse.pop }
-   reversed.join
- end
+
+
 
 
 
