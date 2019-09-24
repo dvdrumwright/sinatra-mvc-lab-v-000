@@ -1,10 +1,10 @@
 class Piglatinizer
 
 
-  def PigLatinizer(string)
-    string_reverse = string.split("")
+  def PigLatinizer(word)
+    string_reverse = word.split("")
     reversed = []
-    string.size.times { reversed << string_reverse.pop }
+    word.size.times { reversed << string_reverse.pop }
     reversed.join
   end
 
