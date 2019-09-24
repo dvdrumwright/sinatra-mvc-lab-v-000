@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Pig Latinizer</title>
+   <title>title</title>
   </head>
   <body>
   <%= @piglatin %>
